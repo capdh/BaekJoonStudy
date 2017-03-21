@@ -7,7 +7,7 @@ public class Baekjoon10828 {
 		String inputString = null; // 입력받는 문자열
 		String[] splitString = new String[2]; // push 3 이런거를 push와 3으로 쪼개서 넣을 문자열 배열
 		int number = 0; // 몇번 실행할지
-		Stack myStack = new Stack(); //스택 생성
+		MyStack myStack = new MyStack(); //스택 생성
 		
 		BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
 		try{
@@ -55,11 +55,11 @@ public class Baekjoon10828 {
 
 }
 
-class Stack{
+class MyStack{
 	int count;
 	Node headNode;
 	
-	public Stack(){
+	public MyStack(){
 		count = 0;
 		headNode = null;
 	}
